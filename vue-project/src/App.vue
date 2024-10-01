@@ -60,7 +60,9 @@ export default {
         <button v-if="city != ''" @click="getWeather()">Получить погоду</button>                              <!-- • Если city не пусто, то вывести кнопку "Получить погоду" -->
         <button disabled v-else>Введите название города</button>                        <!-- • Иначе вывести некликабельную кнопку "Введите название города" -->
         <p class="error">{{ error }}</p>
-        
+
+        <img src="./assets/icons/logo.png" alt="Иконка погоды" class="weather-icon" width="80" height="80">
+
         <div v-if="info != null">
             <p>{{ showTemp }}</p>
             <p>{{ showTempFeelsLike }}</p>
